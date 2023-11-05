@@ -1,4 +1,4 @@
-# Python Notes - Eyes of a JS Dev
+# Python Notes
 
 very unstructured and random notes I take while learning Python, a lot of comparisons to JS as it is the language I am comfortable with
 
@@ -140,3 +140,15 @@ my_function(1, 2, 3, 4, 5)
 # arg1: 1
 # args: (2, 3, 4, 5)
 ```
+
+## Study
+
+- data types, variables, operators
+- conditional & flow control
+- string, list, dict manipulation
+- python function and modules
+- OOP in python
+- Regex & exception handling
+- multi threading & python cgi
+  - thread safety
+  - thread safe functions
