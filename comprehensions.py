@@ -62,6 +62,29 @@ print("---\nSet Comprehensions:\n---")
 # almost like a cross between dict and list comprehension
 # where we loop over the iterable using `for in`
 # we use curly braces to create a set, and only create 1 variable to return
-my_set = {num for num in range(0,6)}
+my_set = {num for num in [1, 2, 3, 2, 5, 6, 3]}
 print(my_set)
 print(type(my_set))
+
+
+# --- Generator Expressions ---
+print("\n")
+print("---\nGenerator Expressions:\n---")
+# these are a type of iterable objects, similar to list
+# BUT they only evaluate on demand (when needed/called)
+# for memory optimizations
+# generator comprehension just uses () instead of []
+
+list_comp = [x ** 2 for x in range(10) if x % 2 == 0]
+print(list_comp)
+
+gen_exp =  (x ** 2 for x in range(10) if x % 2 == 0)
+print(gen_exp)
+
+for num in gen_exp:
+    print(num)
+    
+# THIS WON'T RUN!
+# Generators are exhausted and can only be referenced once
+for num in gen_exp:
+    print(num)
