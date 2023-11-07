@@ -29,3 +29,13 @@ thirty_to_seventy_list = my_list[30:70]
 
 new_list = thirty_to_seventy_list[::-1]
 # print(new_list)
+
+'''
+Make a list of all the names you can think of, called “names”. Make a second list of numbers, called “scores”, using a list comprehension and random.randint(min, max) as before. Use the first list in your comprehension to make it the same length. Then, use zip() to output a simple scoreboard of one score per name.
+'''
+
+names = ['Joe', 'Ethan', 'Mimi']
+scores = [random.randint(0, 10) for name in names]
+
+for name, score in zip(names, scores):
+    print(f"{name} got {score}")
