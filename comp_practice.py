@@ -37,5 +37,26 @@ Make a list of all the names you can think of, called “names”. Make a second
 names = ['Joe', 'Ethan', 'Mimi']
 scores = [random.randint(0, 10) for name in names]
 
-for name, score in zip(names, scores):
-    print(f"{name} got {score}")
+# for name, score in zip(names, scores):
+#     print(f"{name} got {score}")
+    
+    
+'''
+Converting between types in Python is one of the most powerful language features.
+
+You can quickly convert between strings, numbers, and various data-types to supercharge quickly solving problems. You can even use powerful data structures like sets to your advantage.
+'''
+my_string = str(100)
+# print(type(my_string))
+
+my_float = 3.1415
+# print(int(my_float)) #truncates / get rids of number after decimal (mantissa)
+
+# list -> string
+my_list = list("hello")
+print(my_list)
+print("".join(my_list))
+
+# string -> list
+my_string = "the,quick,brown,fox"
+print(my_string.split(","))
