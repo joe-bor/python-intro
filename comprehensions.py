@@ -54,3 +54,14 @@ print(my_list)
 # create a dict using dict comprehension using the list created w/ list comprehension
 scores = {key:value for (key,value) in my_list}
 print(scores)
+
+
+# --- Set Comprehensions ---
+print("---\nSet Comprehensions:\n---")
+
+# almost like a cross between dict and list comprehension
+# where we loop over the iterable using `for in`
+# we use curly braces to create a set, and only create 1 variable to return
+my_set = {num for num in range(0,6)}
+print(my_set)
+print(type(my_set))
